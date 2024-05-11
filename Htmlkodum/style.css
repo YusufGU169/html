@@ -1,3 +1,17 @@
+@keyframes color-change {
+    0% {
+      color: blue;
+    }
+  
+    50% {
+      color: rgb(255, 0, 0);
+    }
+  
+    100% {
+      color: blue;
+    }
+}
+
 body {
     font-family: Arial, sans-serif; /* Yazı tipi ailesi */
     font-size: 11px; /* <p></p> etiketindeki ana yazının boyutu */
@@ -17,4 +31,8 @@ ul {
     border-color:blue;
     border-radius:10px;
     padding: 5px;
+}
+
+h2:hover {
+    animation: color-change 3s infinite;
 }
